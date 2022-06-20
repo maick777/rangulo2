@@ -1,0 +1,91 @@
+.page-link {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.dataTables_filter {
+    text-align: right;
+}
+
+.dataTables_filter .form-control {
+    display: inline;
+    width: 80%;
+    margin: 5px;
+}
+
+
+/*Card*/
+
+.card {
+    margin-top: 20px;
+}
+
+.navbar.navbar-absolute {
+    position: fixed;
+    z-index: 4;
+}
+
+.sidebar {
+    z-index: 5
+}
+
+@media (max-width: 992px) {
+    .navbar.navbar-absolute {
+        position: fixed;
+        z-index: 4;
+    }
+}
+
+
+/*------------ Preloader ------------*/
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #ffffffba;
+
+}
+
+.load {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #eeeeee;
+    border-top: 10px solid #009e25;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: calc(50% - 30px);
+    top: calc(50% - 70px);
+    position: fixed;
+    cursor: not-allowed;
+}
+
+.enviar {
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50%);
+    position: fixed;
+    font-weight: 400;
+    color: #009e25;
+    text-align: center;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ps-container>.ps-scrollbar-x-rail {
+    display: none !important;
+}

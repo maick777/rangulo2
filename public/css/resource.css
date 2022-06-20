@@ -1,0 +1,342 @@
+.image-container:before {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    opacity: .4;
+
+}
+
+.card {
+    background: #ffffffe9;
+}
+
+
+/*  Material / Boostrap  personalizations*/
+.wizard-container {
+    padding-top: 20px;
+}
+
+.wizard-card .tab-content {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.wizard-card .moving-tab {
+    font-size: 25px;
+    color: #9d9c9c
+}
+
+.small,
+small {
+    font-size: 80%;
+}
+
+.form-group.label-static label.control-label,
+.form-group.label-floating.is-focused label.control-label,
+.form-group.label-floating:not(.is-empty) label.control-label {
+    font-size: 12px;
+    /* color: #a188ca;*/
+}
+
+
+
+.wizard-card[data-color="green"] .moving-tab {
+    color: #fff;
+}
+
+
+/*  Maicol CSS
+
+TIPOS DE TEXTO
+m- = Identificador persoanl
+n = Text Negrita
+c = Texto Cursiva
+s = Texto Subrayado
+t = Texto Tachado
+
+
+*/
+
+
+.m-n {
+    font-weight: bold;
+}
+
+.m-c {
+    font-style: italic;
+}
+
+.m-s {
+    text-decoration: underline;
+}
+
+.m-t {
+    text-decoration: line-through;
+}
+
+.m-ns {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.m-ncs {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.m-nt {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.m-nct {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+/*
+
+COLORES DE TEXTO
+m-black = Color Negro
+m-white = Color Blanco
+m-red   = Color Rojo
+*/
+
+.m-black {
+    color: #000000 !important;
+}
+
+.m-gris {
+    color: #337ab7 !important;
+    text-shadow: 0 !important;
+}
+
+.m-white {
+    color: #ffffff
+}
+
+.m-red {
+    color: red;
+}
+
+.image-container {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-fix {
+    margin: 0;
+    position: absolute;
+    text-shadow: 0 0px 0 transparent !important;
+    padding: 0;
+    bottom: 0;
+}
+
+.mp-form{
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+@media (max-width: 780px) {
+
+    .footer-fix {
+        display: none;
+    }
+
+    .mp-form{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
+    }
+
+}
+
+
+/*Personalizar inputs*/
+
+.wizard-card[data-color="green"] .form-group .form-control {
+
+    border: 1px solid #baadad;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0 16px;
+    height: 35px;
+}
+
+.form-group.label-floating label.control-label {
+
+    padding: 0 16px;
+    top: -25px;
+    left: 8px;
+    font-size: 12px;
+    line-height: 1.07143;
+    padding: 2px 8px;
+    background-color: #f3f8f9;
+    border-radius: 5px;
+    color: #4b4b4b;
+
+}
+
+.form-group.label-static label.control-label,
+.form-group.label-floating.is-focused label.control-label,
+.form-group.label-floating:not(.is-empty) label.control-label {
+    top: -25px;
+    left: 8px;
+    font-size: 12px;
+    line-height: 1.07143;
+    padding: 2px 8px;
+    background-color: #f3f8f9;
+    border-radius: 5px;
+    color: #4b4b4b;
+
+}
+
+.wizard-title {
+    font-weight: 400;
+}
+
+.form-control.error {
+
+    background-image: transparent !important;
+    border-color: red !important;
+
+}
+
+.animacion {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+
+
+
+
+
+/*------------ Validación de campos requeridos ------------*/
+
+input[type=checkbox].error~span,
+input[type=radio].error~span {
+    color: red;
+}
+
+.importante {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*------------ Campo Importante * ------------*/
+.form-group input:required~label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+.form-group select:required~label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+
+/*------------ Descripción de Input ------------*/
+
+.text-muted {
+    margin-top: -6px !important;
+    display: block;
+}
+
+/*------------ Preloader ------------*/
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #ffffffba;
+}
+
+.load {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #eeeeee;
+    border-top: 10px solid #009e25;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: calc(50% - 30px);
+    top: calc(50% - 70px);
+    position: fixed;
+    cursor: not-allowed;
+}
+
+.enviar {
+    width: 60px;
+    left: calc(50% - 30px);
+    top: calc(50%);
+    position: fixed;
+    font-weight: bold;
+    color: #009e25;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*------------------Bootstrap | Material-------------------*/
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    margin-bottom: 0;
+}
+
+.wizard-card .wizard-header {
+    padding: 15px;
+}
+
+.input-search {
+    max-width: 100px;
+    min-width: 90px;
+    border: 1px solid #baadad;
+    border-radius: 5px;
+    padding: 6px 3px!important;
+    cursor: pointer;
+    color: #ffffff;
+    background: #4caf50!important;
+}
+
+.input-search:focus{
+    color: #ffffff!important;
+}
+
+/*------------------Select 2-------------------*/
+.select2-container{
+    display: inline;
+}
+.select2-container--default .select2-selection--single{
+    background: transparent;
+    height: 35px;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+}
